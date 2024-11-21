@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Section Titles */
+h2 {
+    color: #444;
+}
+
+h3 {
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Peer Pressure Image */
+.peer-pressure-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+/* Tip Content */
+.tips-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tip {
+    margin-bottom: 20px;
+}
+
+/* Styling for images */
+.tip-image {
+    display: block;
+    max-width: 100%;  /* Makes the image responsive */
+    height: auto;     /* Maintains aspect ratio */
+    margin: 10px 0;
+    border: 2px solid #333;
+    border-radius: 10px;
+    object-fit: contain; /* Ensures the image is contained within the box without distortion */
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #7f8c8d;
+}
+
+ul li::before {
+    content: "• ";
+    color: #2ecc71;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .tips-container {
+        padding: 15px;
+    }
+  
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p, ul li {
+        font-size: 14px;
+    }
+}
