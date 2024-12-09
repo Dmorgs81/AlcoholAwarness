@@ -1,124 +1,152 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fafafa;
     color: #333;
 }
 
+/* Header */
 header {
-    background: #333;
-    color: #fff;
+    background: #2c3e50;
+    color: #ecf0f1;
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
+    font-size: 2rem;
     margin: 0;
+    letter-spacing: 1px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ecf0f1;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Main Content */
 main {
     padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 /* Section Titles */
 h2 {
-    color: #444;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
 }
 
 h3 {
     color: #34495e;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-size: 1.4rem;
 }
 
-/* Peer Pressure Image */
-.peer-pressure-img {
-    display: block;
+/* Text Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+img {
     max-width: 100%;
     height: auto;
-    margin: 1rem auto;
-    border: 2px solid #333;
-    border-radius: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
 }
 
-/* Tip Content */
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Peer Pressure Tips */
 .tips-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .tip {
-    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px);
+    min-width: 250px;
 }
 
-/* Styling for images */
-.tip-image {
-    display: block;
-    max-width: 100%;  /* Makes the image responsive */
-    height: auto;     /* Maintains aspect ratio */
-    margin: 10px 0;
-    border: 2px solid #333;
-    border-radius: 10px;
-    object-fit: contain; /* Ensures the image is contained within the box without distortion */
+.tip img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
-/* List styles */
-ul {
-    list-style-type: none;
-    padding-left: 0;
+.tip h3 {
+    margin-top: 0;
 }
 
-ul li {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #7f8c8d;
+/* Buttons */
+button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-ul li::before {
-    content: "• ";
-    color: #2ecc71;
-    font-weight: bold;
-    margin-right: 8px;
+button:hover {
+    background: #2980b9;
 }
 
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .tips-container {
-        padding: 15px;
-    }
-  
-    h2 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    p, ul li {
-        font-size: 14px;
-    }
+/* Statistics */
+#stats {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: none; /* Hidden by default */
 }
